@@ -11,6 +11,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                HStack {
+                    Image(systemName: "text.justify")
+                    Spacer()
+                }
+                .padding(.horizontal)
                 Text("Lakefield")
                     .font(.title)
                 Text("19°C")
@@ -26,7 +31,7 @@ struct ContentView: View {
                     Text("L: 13°")
                 }
                 .font(.body)
-                
+                Spacer()
             }
         }
         .navigationTitle("Weather")
